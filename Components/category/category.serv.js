@@ -1,4 +1,4 @@
-const CategoryModel = require ('../Models/category.models')  
+const CategoryModel = require ('./category.models')  
 const slugify = require ("slugify")       
 const asyncHandler = require('express-async-handler')     // Handle error function npm module ..
 

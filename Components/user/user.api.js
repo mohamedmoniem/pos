@@ -1,5 +1,5 @@
 const { creatUser, getUsers,getUser ,updateUser, deleteUser ,changePassword } = require("../Services/user.serv")
-const { signup ,signin} = require("../Auth/user.auth")
+const { signup ,signin} = require("./user.auth")
 //const   {ProtectedRoutes} = require ('../Auth/user.auth')  
 //const   {allowTo} = require ('../Auth/user.auth')  
 

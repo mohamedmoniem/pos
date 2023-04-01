@@ -1,6 +1,6 @@
-const userModel = require("../Models/user.model")
+const userModel = require("./user.model")
 const jwt = require('jsonwebtoken')
-const proError = require('../utils/project.err')
+const proError = require('../utils/errorFunctions/project.err')
 const asyncHandler = require('express-async-handler')
 const bcrypt = require('bcrypt');
 

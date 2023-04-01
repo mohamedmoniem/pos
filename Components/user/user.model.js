@@ -42,6 +42,7 @@ const schema = mongoose.Schema({
       required:true,
       minlength: [6]
   },
+  
   passwordChangeAt: Date,
 
   image: {
