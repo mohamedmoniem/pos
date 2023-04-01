@@ -9,9 +9,7 @@ const { getCategories,
     deletetOneCategory }
     = require('./category.serv')  // 4
 
-const { ProtectedRoutes } = require('../user/user.auth')  // 4
-const { allowTo } = require('../user/user.auth')  // 4
-
+const { ProtectedRoutes, allowTo } = require('../user/user.auth') ;   // 4
 
 // Add routes
 router.route('/').post(ProtectedRoutes, allowTo('admin'), creatCategory).get(getCategories)     // 3
@@ -23,6 +21,6 @@ router
 
 // merge params
 // ( parent + id + child ) , navigate to child route
-router.use("/:categoryId/subcategories",subcategoryRoute)
+router.use("/:categoryId/subcategories", subcategoryRoute)
 
-module.exports = router;  // 2
+module.exports = router;  // 2 

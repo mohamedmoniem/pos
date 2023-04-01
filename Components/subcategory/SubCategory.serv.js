@@ -25,7 +25,7 @@ exports.getSubCategories = asyncHandler(async (req, res) => {
 })
 
 
-// get specific cat.
+// get specific  subcat.
 exports.getSubCategory = asyncHandler(async (req, res) => {
    const { id } = req.params;                      // get id from url  
    let subcategory = await SubCategoryModel.findById(id)
@@ -37,7 +37,7 @@ exports.getSubCategory = asyncHandler(async (req, res) => {
 )
 
 
-// update specific category      (! importat )
+// update specific subcategory      (! importat )
 exports.updateSubCategory = asyncHandler(async (req, res) => {
    const { id } = req.params;                      // get id from url  
    const { name } = req.body                       // push data to body 
@@ -55,7 +55,7 @@ exports.updateSubCategory = asyncHandler(async (req, res) => {
 
 )
 
-// delete specific category
+// delete specific  subcategory
 exports.deleteSubCategory = asyncHandler(async (req, res) => {
    const { id } = req.params;                      // get id from url  
 

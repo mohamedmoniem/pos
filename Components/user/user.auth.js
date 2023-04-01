@@ -47,7 +47,6 @@ module.exports.ProtectedRoutes = asyncHandler(async (req, res, next) => {
   // 3) check this user is still avalibale
   let user = await userModel.findById(decoded.userID)
   if (!user) return next(new proError("user not found", 401))
-  console.log(user);
 
   // 4) check if password change or not 
   //  let changingPassword = parseInt(user.passwordChangeAt.getTime() / 1000)
